@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="debit" class="in.spring.beans.DebitCardPay" primary="true"/> 
+    <bean id="credit" class="in.spring.beans.CreditCardPay"/>
+    <bean  id="payments" class="in.spring.beans.PaymentService" autowire="constructor">
+    </bean>
+</beans>
